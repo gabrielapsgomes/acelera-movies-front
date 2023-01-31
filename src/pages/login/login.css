@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+form {
+  justify-content: space-around;
+  background-color: hwb(0 78% 20%);
+  border: 1px solid rgb(174, 174, 177);
+  border-radius: 1px;
+  width: 390px;
+  height: 380px;
+  padding: 50px 20px 20px 20px;
+  margin: 0 auto;
+}
+
+.botaoEntrar{
+  color:  rgb(146, 191, 228);
+  font-size: 10px;
+  background-color: white;
+  border: 3px solid rgb(146, 191, 228);
+  border-radius: 5px;
+  justify-content:center;
+  padding: 15px;
+  margin: 0 auto;
+  width: 80%;
+  display: block;
+}
+
+.InputName {
+  border: 3px solid rgb(199, 204, 211);
+  border-radius: 3px;
+  padding: 15px;
+  width: 80%;
+  margin: 0px auto 15px auto ;
+  display: block;
+}
+
+.InputPassword {
+  background-color: white;
+  padding: 15px;
+  width: 80%;
+  margin: 0px auto 15px auto ;
+  display: block;
+}
+
+a{
+  margin: 0px auto 25px auto ;
+  display: block;
+  text-align: center;
+}
+
+label{
+  margin: 5px auto;
+  width: 80%;
+ display: block;
+}
