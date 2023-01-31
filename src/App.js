@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from 'react-router-dom'
-import FormularioLogin from './pages/login/login'
+import FormularioLogin from './pages/tela login/login'
 import TelaHome from './pages/tela home/home'
 
 export const App = () => {
