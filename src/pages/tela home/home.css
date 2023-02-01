@@ -1,0 +1,141 @@
+.bodyHome{
+  background-color: rgb(201, 243, 201);
+}
+
+#formModal {
+  border: none;
+  justify-content: space-around;
+  background-color:  rgb(203, 245, 210);;
+  width: 100%;
+  height: 400px;
+  padding: 10px 20px 20px 10px;
+  margin: 0 auto;
+  display: block;
+}
+
+.input{
+  margin: 0 auto;
+  padding: 9px;
+  display: inline-block;
+}
+
+.InputTitle {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+}
+
+.InputSubtitle {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+}
+
+
+.InputResume {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  margin: 0 auto;
+  padding: 50px;
+  width: 94%;
+  display: block;
+}
+
+.InputRDate {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.InputImage {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+.InputDirector {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+  display: block;
+}
+
+.InputWriter {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+  display: block;
+}
+
+.InputClass {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+  display: block;
+}
+
+.InputStudio {
+  
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+  display: block;
+}
+
+.InputStars {
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 94%;
+  margin: 0 auto;
+  display: block;
+}
+
+.botaoCriar {
+border: none;
+background-color: rgb(24, 120, 29);
+color: white;
+padding: 10px;
+width: 94%;
+border-radius: 5px;
+margin: 0 auto;
+margin-top: 20px;
+display: block;
+}
+
+.botaoAdicionar {
+  color: rgb(45, 117, 61);
+ padding-bottom: 500px;
+ padding-right: 90%;
+font-size: 20px;
+}
+
+label{
+  color: rgb(24, 120, 29);
+  font-size: large;
+  margin: 0 auto;
+  width: 90%;
+ display: block;
+}

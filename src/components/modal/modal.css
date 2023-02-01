@@ -1,5 +1,5 @@
 .modal-container {
-  background-color: white;
+  background-color:rgb(255, 253, 253);
   position: fixed;
   left: 0;
   top: 0;
@@ -12,28 +12,14 @@
 }
 
 .modal {
+  box-sizing: border-box;
   border: 1px solid rgb(207, 206, 206);
-  background-color: rgb(236, 232, 232);
+  background-color: rgb(203, 245, 210);
   border-radius: 1px;
-  padding: 120px;
-  margin: 0 auto;
-  width: 25%;
-  max-width: 500px;
-}
-
-.modal h2, .modal p {
- margin: 0;
-}
-
-.modal header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  border: 1px solid;
   padding: 10px;
-  border-radius: 5px;
-  background-color: rgb(0, 153, 255);
-  color: white;
+  margin: 0 auto;
+  width: 400px;
+  height: 600px;
 }
 
 .close {
@@ -50,3 +36,28 @@
   color: darkblue;
 }
 
+/* .modal h2, .modal p {
+ margin: 0;
+ color: blue;
+} 
+
+.modal header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 9, 15);
+  color: white;
+} 
+
+.close {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  cursor: pointer;
+} */

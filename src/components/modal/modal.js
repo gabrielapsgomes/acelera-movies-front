@@ -1,7 +1,7 @@
 import './modal.css'
 import { useState } from 'react'
 
-export const Modal = ({ children, label, title }) => {
+const Modal = ({ children, title }) => {
   const [toggle, setToggle] = useState(false)
   const handleClick = () => {
     setToggle(toggle => !toggle)
@@ -9,18 +9,22 @@ export const Modal = ({ children, label, title }) => {
 
   return (
     <>
-     <button onClick={handleClick}>{label}</button>
-
+     <a onClick={handleClick} className='botaoAdicionar'>Add Movie</a>
     {toggle && (
      <div className="modal-container">
       <div className="modal">
        <header>
-        <h2>{title}</h2>
-        <button onClick={handleClick} className="close">x</button>
       </header>
-       {children}
+      {children}
      </div>
    </div>)}
     </>
   )
 }
+
+export default Modal
+
+/*  <header>
+       <h2>{title}</h2>
+      </header>
+        */

@@ -58,7 +58,15 @@ a{
   text-align: center;
 }
 
-label{
+.labelLogin{
+  color: rgb(193, 25, 100);
+  font-size: large;
+  margin: 5px auto;
+  width: 80%;
+ display: block;
+}
+
+.labelPass{
   color: rgb(193, 25, 100);
   font-size: large;
   margin: 5px auto;
