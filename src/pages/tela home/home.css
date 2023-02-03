@@ -2,6 +2,7 @@
   background-color: rgb(201, 243, 201);
 }
 
+
 #formModal {
   border: none;
   justify-content: space-around;
@@ -128,7 +129,7 @@ display: block;
 .botaoAdicionar {
   color: rgb(45, 117, 61);
  padding-bottom: 500px;
- padding-right: 90%;
+ padding-right: 50%;
 font-size: 20px;
 }
 

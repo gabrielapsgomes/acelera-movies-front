@@ -30,6 +30,7 @@ const FormularioLogin = () => {
   }
 
   return (
+    <body className='bodyLogin'>
     <form>
       <label className='labelLogin' htmlFor='login'>Login</label>
         <input className='InputName' type="text" placeholder='Login:' id='email' name='email' onChange={handleChange}/>
@@ -38,6 +39,7 @@ const FormularioLogin = () => {
         <a href='Esqueceu a sua senha'>Esqueceu a sua senha?</a>
         <button className='botaoEntrar' onClick={handleClick}>Entrar</button>
     </form>
+    </body>
   )
 }
 export default FormularioLogin

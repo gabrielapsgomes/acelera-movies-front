@@ -1,0 +1,48 @@
+.pageInteira {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: rgb(250, 250, 250);
+  width: 100vw;
+  height: 100vh;
+}
+
+.menu {
+  background-color: rgb(201, 243, 201);
+}
+
+.main {
+  background-color: rgb(162, 227, 162);
+}
+
+.hello {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 13%;
+  background-color: rgb(50, 125, 61);
+}
+
+.hello > h2{
+  color: white;
+}
+
+.main > h1 {
+  color: white;
+  font-size: 1.7rem;
+  background-color: rgb(50, 125, 61);
+  width: 93%;
+  height: 8%;
+  padding: 16px;
+  margin: 0 auto;
+ margin-top: 3%;
+}
+
+.filmes {
+  background-color: black;
+}
+
+a {
+ margin-top: 40px;
+}

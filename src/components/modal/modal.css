@@ -22,19 +22,7 @@
   height: 600px;
 }
 
-.close {
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  color: white;
-  font-weight: 900;
-  font-size: 20px;
-  cursor: pointer;
-}
 
-.close:hover {
-  color: darkblue;
-}
 
 /* .modal h2, .modal p {
  margin: 0;
@@ -60,4 +48,8 @@
   font-weight: 900;
   font-size: 20px;
   cursor: pointer;
+} 
+
+.close:hover {
+  color: darkblue;
 } */
