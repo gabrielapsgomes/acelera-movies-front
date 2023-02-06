@@ -35,14 +35,36 @@
   width: 93%;
   height: 8%;
   padding: 16px;
-  margin: 0 auto;
- margin-top: 3%;
+  margin: 30px;
+  margin-top: 3%;
 }
 
 .filmes {
-  background-color: black;
+  color: rgb(255, 255, 255);
 }
 
 a {
  margin-top: 40px;
+}
+
+.h1Titles{
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
+
+}
+
+.h2Resume{
+  color: rgb(0, 0, 0);
+  font-size: 1.7rem;
+}
+
+.h1Resume{
+  color: rgb(0, 0, 0);
+  font-size: 1.0rem;
+}
+
+.imagem{
+padding-left: 19px;
+ width: 150px;
+ height: 190px;
 }
