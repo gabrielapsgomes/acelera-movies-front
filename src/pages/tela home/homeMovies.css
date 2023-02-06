@@ -1,7 +1,7 @@
 .pageInteira {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  background-color: rgb(250, 250, 250);
+  background-color: rgb(162, 227, 162);
   width: 100vw;
   height: 100vh;
 }
@@ -25,11 +25,11 @@
 }
 
 .hello > h2{
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .main > h1 {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 1.7rem;
   background-color: rgb(50, 125, 61);
   width: 93%;
@@ -39,32 +39,41 @@
   margin-top: 3%;
 }
 
-.filmes {
-  color: rgb(255, 255, 255);
-}
-
 a {
  margin-top: 40px;
 }
 
-.h1Titles{
-  color: rgb(0, 0, 0);
-  font-size: 1.7rem;
-
-}
-
-.h2Resume{
-  color: rgb(0, 0, 0);
-  font-size: 1.7rem;
+.h1Titles, .h2Resume{
+  color:rgb(50, 125, 61);
+  font-size: 1.4rem;
+  padding-top: 10px;
 }
 
 .h1Resume{
-  color: rgb(0, 0, 0);
+  color: rgb(98, 93, 93);
   font-size: 1.0rem;
+  width: 50%;
+  
 }
 
 .imagem{
-padding-left: 19px;
- width: 150px;
- height: 190px;
-}
+  padding-left: 19px;
+  width: 200px;
+  height: 200px;
+  } 
+
+li{
+ background-color:  rgb(162, 227, 162);
+ padding-bottom: 20px;
+ display: flex;
+ flex-direction: row;
+ padding-left: 12px;
+  }
+
+  .dadosFilmes{
+    padding-left: 20px;
+  }
+
+  .h1Date{
+    padding-bottom: 40px;
+  }

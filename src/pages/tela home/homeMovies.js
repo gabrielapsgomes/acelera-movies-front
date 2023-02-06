@@ -21,22 +21,22 @@ const HomeMovie = () => {
       <div className="main">
         <h1>All Movies</h1>
         <div className="filmes">
-          <div>
             {movies.map((movie, key) => (
               <li key={key}>
                 <img src={movie.image} className='imagem'></img>
+               <div className='dadosFilmes'>
                 <h1 className="h1Titles">{movie.title}</h1>
                 <h1 className="h1Date">{movie.releaseDate}</h1>
                 <h2 className="h2Resume">Resume:</h2>
                 <h1 className="h1Resume">{movie.resume}</h1>
-                <h1 className="h1Note">{movie.note}</h1>
+               </div>
               </li>
             ))}
           </div>
         </div>
       </div>
-    </div>
   )
 }
 
 export default HomeMovie
+// <h1 className="h1Note">{movie.note}</h1>
