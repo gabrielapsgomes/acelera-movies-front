@@ -10,6 +10,14 @@ const HomeMovie = () => {
       setMovies(response.data)
     })
   })
+
+  const handleDate = (date) => {
+    const day = date.toLocaleDateString(undefined, { day: 'numeric' })
+    const month = date.toLocaleDateString('en', { month: 'long' })
+    const year = date.toLocaleDateString(undefined, { year: 'numeric' })
+    return [day, month, year].join(' ')
+  }
+
   return (
     <div className="pageInteira">
       <div className="menu">
@@ -26,7 +34,7 @@ const HomeMovie = () => {
                 <img src={movie.image} className='imagem'></img>
                <div className='dadosFilmes'>
                 <h1 className="h1Titles">{movie.title}</h1>
-                <h1 className="h1Date">{movie.releaseDate}</h1>
+                <h1 className="h1Date">Date: {handleDate(new Date(movie.releaseDate))}</h1>
                 <h2 className="h2Resume">Resume:</h2>
                 <h1 className="h1Resume">{movie.resume}</h1>
                </div>
