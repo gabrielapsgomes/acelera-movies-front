@@ -9,7 +9,7 @@ const HomeMovie = () => {
     client.get('/movie').then(function (response) {
       setMovies(response.data)
     })
-  })
+  }, [])
 
   const handleDate = (date) => {
     const day = date.toLocaleDateString(undefined, { day: 'numeric' })
