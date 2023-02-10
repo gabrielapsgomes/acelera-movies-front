@@ -6,15 +6,18 @@ import './home.css'
 const TelaHome = () => {
   const [movie, setMovie] = useState({
     title: '',
+    gender: '',
+    classification: '',
     subtitle: '',
-    resume: '',
-    releaseDate: '',
     image: '',
+    releaseDate: '',
     director: '',
     writer: '',
-    classification: '',
     studio: '',
-    score: ''
+    actors: '',
+    resume: '',
+    awards: '',
+    note: ''
   })
 
   const handleChange = (e) => {
@@ -46,7 +49,7 @@ const TelaHome = () => {
         <input className='InputResume' type="text" placeholder='Resume' id='resume' name='resume'onChange={handleChange}/>
 
    <div className='input'> <label htmlFor='Release Date'>Release Date</label>
-        <input className='InputRDate' type="text" placeholder='Release Date' id='release date' name='release date' onChange={handleChange}/></div>
+        <input className='InputRDate' type="text" placeholder='Release Date' id='release date' name='releaseDate' onChange={handleChange}/></div>
 
     <div className='input'> <label htmlFor='Image'>Image</label>
         <input className='InputImage' type="text" placeholder='Image' id='image' name='image' onChange={handleChange}/></div>
@@ -63,14 +66,13 @@ const TelaHome = () => {
     <div className='input'> <label htmlFor='Studio'>Studio</label>
         <input className='InputStudio' type="text" placeholder='Studio' id='studio' name='studio' onChange={handleChange}/></div>
 
-    <label htmlFor='Stars'>Stars</label>
-        <input className='InputStars' type="number" placeholder='Stars' id='stars' name='score' onChange={handleChange}/>
+    <label htmlFor='Note'>Note</label>
+        <input className='InputStars' type="integer" placeholder='Note' id='note' name='note' onChange={handleChange}/>
 
-        <button type = 'submit' className='botaoCriar'>Create Movie</button>
+        <button onClick={handleSubmit} type = 'submit' className='botaoCriar'>Create Movie</button>
 
        </form>
   </Modal>
   </body>)
 }
-
 export default TelaHome
