@@ -32,8 +32,6 @@ const TelaHome = () => {
     e.preventDefault()
     axios
       .post('http://localhost:9000/movie', movie)
-      .then(response => {
-      })
   }
 
   return (<body className='bodyHome'><Modal>
@@ -69,7 +67,7 @@ const TelaHome = () => {
     <label htmlFor='Note'>Note</label>
         <input className='InputStars' type="integer" placeholder='Note' id='note' name='note' onChange={handleChange}/>
 
-        <button onClick={handleSubmit} type = 'submit' className='botaoCriar'>Create Movie</button>
+        <button onClick={handleSubmit} type ='submit' className='botaoCriar'>Create Movie</button>
 
        </form>
   </Modal>
