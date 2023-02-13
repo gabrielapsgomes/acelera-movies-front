@@ -32,6 +32,7 @@ const TelaHome = () => {
     e.preventDefault()
     axios
       .post('http://localhost:9000/movie', movie)
+      .then(() => location.reload())
   }
 
   return (<body className='bodyHome'><Modal>

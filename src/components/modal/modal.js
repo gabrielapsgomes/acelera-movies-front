@@ -12,8 +12,6 @@ const Modal = ({ children }) => {
     {toggle && (
      <div className="modal-container">
       <div className="modal">
-       <header>
-      </header>
       {children}
      </div>
    </div>)}
@@ -23,7 +21,10 @@ const Modal = ({ children }) => {
 
 export default Modal
 
-/*  <header>
+/*   <header>
+      </header>
+      {children}
+  <header>
        <h2>{title}</h2>
       </header>
         */
