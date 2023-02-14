@@ -1,16 +1,17 @@
-.mainID {
-  background-color: rgb(121, 218, 237);
-}
-.menuID {
-  background-color: rgb(255, 255, 255);
-} 
-
 .pageInteiraID {
   display: grid;
   grid-template-columns: 1fr 4fr;
   background-color: rgb(121, 218, 237);
   width: 100vw;
   height: 100vh;
+}
+
+.menuID {
+  background-color: rgb(255, 255, 255);
+} 
+
+.mainID {
+  background-color: rgb(121, 218, 237);
 }
 
 .helloID {
@@ -75,3 +76,5 @@ a {
   .h1DateID{
     padding-bottom: 15px;
   }
+
+

@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react'
 import './homeMovies.css'
 import TelaHome from './home'
 import { client } from '../../service/client'
+import { useNavigate } from 'react-router'
 
 const HomeMovie = () => {
+  const navigate = useNavigate()
   const [movies, setMovies] = useState([])
   useEffect(() => {
     client.get('/movie').then(function (response) {
@@ -30,10 +32,10 @@ const HomeMovie = () => {
         <h1>All Movies</h1>
         <div className="filmes">
             {movies.map((movie, key) => (
-              <li key={key}>
+              <li className='liHomeMovies'key={key}>
                 <img src={movie.image} className='imagem'></img>
                <div className='dadosFilmes'>
-                <h1 className="h1Titles">{movie.title}</h1>
+                <h1 onClick={() => navigate(`/movie/${movie.id}`)} className="h1Titles">{movie.title}</h1>
                 <h1 className="h1Date">Date: {handleDate(new Date(movie.releaseDate))}</h1>
                 <h2 className="h2Resume">Resume:</h2>
                 <h1 className="h1Resume">{movie.resume}</h1>

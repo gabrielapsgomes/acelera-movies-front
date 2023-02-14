@@ -61,7 +61,7 @@ a {
   height: 200px;
   } 
 
-li{
+.liHomeMovies{
  background-color:  rgb(162, 227, 162);
  padding-bottom: 20px;
  display: flex;

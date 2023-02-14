@@ -31,7 +31,7 @@ export const ModalEdicao = () => {
   async function handleSubmit (e) {
     e.preventDefault()
     axios
-      .put('http://localhost:9000/movie/:id', movie)
+      .get('http://localhost:9000/movie', movie)
   }
 
   return (<body className='bodyID'><Modal>
