@@ -1,0 +1,77 @@
+.mainID {
+  background-color: rgb(121, 218, 237);
+}
+.menuID {
+  background-color: rgb(255, 255, 255);
+} 
+
+.pageInteiraID {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  background-color: rgb(121, 218, 237);
+  width: 100vw;
+  height: 100vh;
+}
+
+.helloID {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 92px;
+  background-color: rgb(22, 137, 180);
+}
+
+.helloID > h2{
+  color: rgb(255, 255, 255);
+}
+
+ .mainID > h1 {
+  color: rgb(255, 255, 255);
+  font-size: 1.7rem;
+  background-color:  rgb(22, 137, 180);
+  width: 93%;
+  padding: 16px;
+  margin: 30px;
+  margin-top: 3%;
+} 
+
+a {
+ margin-top: 40px;
+}
+
+.h1TitlesID, .h2ResumeID{
+  color:rgb(0, 100, 137);
+  font-size: 1.4rem;
+  padding-top: 10px;
+}
+
+.h1ResumeID{
+  color: rgb(255, 255, 255);
+  font-size: 1.0rem;
+  width: 50%;
+  
+}
+
+.imagemID{
+  padding-left: 19px;
+  width: 200px;
+  height: 200px;
+  } 
+
+.liID{
+ background-color:  rgb(121, 218, 237);
+ padding-bottom: 20px;
+ display: flex;
+ flex-direction: row;
+ padding-left: 12px;
+  }
+
+  .dadosFilmesID{
+    padding-left: 20px;
+  }
+
+  .h1DateID{
+    padding-bottom: 15px;
+  }
