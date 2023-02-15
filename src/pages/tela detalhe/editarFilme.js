@@ -36,12 +36,12 @@ export const ModalEdicao = () => {
   }
 
   return (<body className='bodyID'><Modal>
-  <form className='formModalID' onSubmit={handleSubmit}>
+  <form id='formModalID' onSubmit={handleSubmit}>
 
 <div className='inputID'><label className='labelID' htmlFor='Title'>Title</label>
   <input className='InputTitleID' type="text" placeholder='Title' id='title' name='title' onChange={handleChange} /></div>
 
-<div className='inpuID'><label className='labelID' htmlFor='Subtitle'>Subtitle</label>
+<div className='inputID'><label className='labelID' htmlFor='Subtitle'>Subtitle</label>
   <input className='InputSubtitleID' type="text" placeholder='Subtitle' id='subtitle' name='subtitle' onChange={handleChange}/></div>
 
 <label className='labelID' htmlFor='Resume'>Resume</label>

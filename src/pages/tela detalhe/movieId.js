@@ -3,6 +3,7 @@ import { client } from '../../service/client'
 import { ModalEdicao } from '../tela detalhe/editarFilme'
 import { useParams } from 'react-router'
 import './filme.css'
+import Note from '../../components/estrelas'
 
 const DetalheFilme = () => {
   const [movie, setMovies] = useState([])
@@ -34,6 +35,7 @@ const DetalheFilme = () => {
                <li className='liID'>
                 <div className='cssImage'><img src={movie.image} className='imagemID'></img></div>
                 <div className='dadosFilmesID'>
+                <Note className='noteStar' note={movie.note} />
                 <h1 className='h1subtitleID'>{movie.subtitle}</h1>
                 <h1 className="h1DateID">Date: {handleDate(new Date(movie.releaseDate))}</h1>
                 <h2 className="h2ResumeID">Resume:</h2>

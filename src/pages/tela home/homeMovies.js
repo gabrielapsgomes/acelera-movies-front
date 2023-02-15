@@ -3,6 +3,7 @@ import './homeMovies.css'
 import TelaHome from './home'
 import { client } from '../../service/client'
 import { useNavigate } from 'react-router'
+import Note from '../../components/estrelas'
 
 const HomeMovie = () => {
   const navigate = useNavigate()
@@ -35,6 +36,7 @@ const HomeMovie = () => {
               <li className='liHomeMovies'key={key}>
                 <img src={movie.image} className='imagem'></img>
                <div className='dadosFilmes'>
+               <Note className='noteStar' note={movie.note} />
                 <h1 onClick={() => navigate(`/movie/${movie.id}`)} className="h1Titles">{movie.title}</h1>
                 <h1 className="h1Date">Date: {handleDate(new Date(movie.releaseDate))}</h1>
                 <h2 className="h2Resume">Resume:</h2>
@@ -49,4 +51,3 @@ const HomeMovie = () => {
 }
 
 export default HomeMovie
-// <h1 className="h1Note">{movie.note}</h1>
