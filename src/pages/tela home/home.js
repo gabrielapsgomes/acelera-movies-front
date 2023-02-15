@@ -65,7 +65,7 @@ const TelaHome = () => {
     <div className='input'> <label className='labelHome' htmlFor='Studio'>Studio</label>
         <input className='InputStudio' type="text" placeholder='Studio' id='studio' name='studio' onChange={handleChange}/></div>
 
-    <label className='labelHome' htmlFor='Note'>Note</label>
+    <label className='labelHome' htmlFor='Stars'>Stars</label>
         <input className='InputStars' type="integer" placeholder='Note' id='note' name='note' onChange={handleChange}/>
 
         <button onClick={handleSubmit} type ='submit' className='botaoCriar'>Create Movie</button>

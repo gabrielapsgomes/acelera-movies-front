@@ -32,6 +32,7 @@ export const ModalEdicao = () => {
     e.preventDefault()
     axios
       .get('http://localhost:9000/movie', movie)
+      .then(() => location.reload())
   }
 
   return (<body className='bodyID'><Modal>
@@ -64,10 +65,10 @@ export const ModalEdicao = () => {
 <div className='inputID'> <label className='labelID' htmlFor='Studio'>Studio</label>
   <input className='InputStudioID' type="text" placeholder='Studio' id='studio' name='studio' onChange={handleChange}/></div>
 
-<label className='labelID' htmlFor='NoteID'>Note</label>
-  <input className='InputStarsID' type="integer" placeholder='Note' id='note' name='note' onChange={handleChange}/>
+<label className='labelID' htmlFor='NoteID'>Stars</label>
+  <input className='InputStarsID' type="integer" placeholder='Stars' id='note' name='note' onChange={handleChange}/>
 
-  <button onClick={handleSubmit} type ='submit' className='botaoEditar'>Send Update</button>
+  <button onClick={handleSubmit} type ='submit' className='botaoEditar'>Create movie</button>
 
  </form>
 </Modal>

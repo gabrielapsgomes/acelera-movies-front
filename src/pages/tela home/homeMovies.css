@@ -44,15 +44,17 @@ a {
 
 .h1Titles, .h2Resume{
   color:rgb(50, 125, 61);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding-top: 10px;
+  font-family: fantasy;
+  
 }
 
 .h1Resume{
   color: rgb(98, 93, 93);
   font-size: 1.0rem;
-  width: 50%;
-  
+  width: 60%;
+  font-family:cursive;
 }
 
 .imagem{
@@ -75,4 +77,5 @@ a {
 
   .h1Date{
     padding-bottom: 15px;
+    font-family:cursive;
   }

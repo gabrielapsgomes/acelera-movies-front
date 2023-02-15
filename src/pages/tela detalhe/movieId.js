@@ -29,21 +29,25 @@ const DetalheFilme = () => {
        <ModalEdicao />
       </div>
         <div className="filmesID">
+        <div className="mainID">
+                <h1 className="h1TitlesID">{movie.title}</h1> </div>
                <li className='liID'>
-               <div className='dadosFilmesID'>
-               <div className="mainID">
-                <h1 className="h1TitlesID">{movie.title}</h1></div>
-                <img src={movie.image} className='imagemID'></img>
+                <div className='cssImage'><img src={movie.image} className='imagemID'></img></div>
+                <div className='dadosFilmesID'>
                 <h1 className='h1subtitleID'>{movie.subtitle}</h1>
                 <h1 className="h1DateID">Date: {handleDate(new Date(movie.releaseDate))}</h1>
                 <h2 className="h2ResumeID">Resume:</h2>
                 <h1 className="h1ResumeID">{movie.resume}</h1>
+               </div>
+              </li>
+              <li className='liID2'>
+                <div className='infoID'>
                 <h1 className="h1genderID">{movie.gender}</h1>
                 <h1 className="h1classificacaoID">Classification: {movie.classification},</h1>
                 <h1 className="h1diretorID">Director: {movie.director}</h1>
                 <h1 className="h1writerID">Writer: {movie.writer}</h1>
                 <h1 className="h1studioID">Studio: {movie.studio}</h1>
-               </div>
+                </div>
               </li>
           </div>
         </div>
