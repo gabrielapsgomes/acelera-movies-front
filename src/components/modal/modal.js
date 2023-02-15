@@ -1,14 +1,14 @@
 import './modal.css'
 import { useState } from 'react'
 
-const Modal = ({ children }) => {
+const Modal = ({ children, title, className, icon }) => {
   const [toggle, setToggle] = useState(false)
   const handleClick = () => {
     setToggle(toggle => !toggle)
   }
   return (
     <>
-     <a onClick={handleClick} className='botaoAdicionar'>Add Movie</a>
+     <a icon={icon} onClick={handleClick} className={className}>{title}</a>
     {toggle && (
      <div className="modal-container">
       <div className="modal">
@@ -20,11 +20,3 @@ const Modal = ({ children }) => {
 }
 
 export default Modal
-
-/*   <header>
-      </header>
-      {children}
-  <header>
-       <h2>{title}</h2>
-      </header>
-        */

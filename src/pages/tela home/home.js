@@ -35,7 +35,7 @@ const TelaHome = () => {
       .then(() => location.reload())
   }
 
-  return (<body className='bodyHome'><Modal>
+  return (<body className='bodyHome'><Modal title='Add Movie' className='botaoAdicionar'>
         <form id='formModal' onSubmit={handleSubmit}>
 
     <div className='input'><label className='labelHome' htmlFor='Title'>Title</label>

@@ -2,8 +2,13 @@ import Modal from '../../components/modal/modal'
 import axios from 'axios'
 import { useState } from 'react'
 import './editarFilme.css'
+import { useParams } from 'react-router'
+
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// icon={<FontAwesomeIcon icon="fa-duotone fa-pen" />}
 
 export const ModalEdicao = () => {
+  const { id } = useParams()
   const [movie, setMovie] = useState({
     title: '',
     gender: '',
@@ -31,11 +36,11 @@ export const ModalEdicao = () => {
   async function handleSubmit (e) {
     e.preventDefault()
     axios
-      .get('http://localhost:9000/movie', movie)
+      .put('http://localhost:9000/movie/' + id, movie)
       .then(() => location.reload())
   }
 
-  return (<body className='bodyID'><Modal>
+  return (<body className='bodyID'><Modal title='ed' className='botaoEditar'>
   <form id='formModalID' onSubmit={handleSubmit}>
 
 <div className='inputID'><label className='labelID' htmlFor='Title'>Title</label>
@@ -68,7 +73,7 @@ export const ModalEdicao = () => {
 <label className='labelID' htmlFor='NoteID'>Stars</label>
   <input className='InputStarsID' type="integer" placeholder='Stars' id='note' name='note' onChange={handleChange}/>
 
-  <button onClick={handleSubmit} type ='submit' className='botaoEditar'>Create movie</button>
+  <button onClick={handleSubmit} type ='submit' className='update'>Send Update</button>
 
  </form>
 </Modal>

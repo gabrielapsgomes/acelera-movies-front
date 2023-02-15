@@ -112,7 +112,7 @@
   display: block;
 }
 
-.botaoEditar {
+.update {
 border: none;
 background-color: rgb(21, 96, 123);
 color: white;
@@ -124,10 +124,13 @@ margin-top: 20px;
 display: block;
 }
 
-.botaoAdicionar {
+.botaoEditar {
+  background-color: aqua;
+  border: 10px;
+  width: 20px;
   color: rgb(157, 154, 154);
- padding-bottom: 500px;
- padding-right: 50%;
+ padding-bottom: 20px;
+ padding-right: 10%;
 font-size: 20px;
 }
 
