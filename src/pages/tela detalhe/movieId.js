@@ -27,11 +27,10 @@ const DetalheFilme = () => {
         <div className="helloID">
           <h2>Hello, User!</h2>
         </div>
-       <ModalEdicao />
       </div>
         <div className="filmesID">
         <div className="mainID">
-                <h1 className="h1TitlesID">{movie.title}</h1> </div>
+                <h1 className="h1TitlesID">{movie.title} <ModalEdicao /></h1> </div>
                <li className='liID'>
                 <div className='cssImage'><img src={movie.image} className='imagemID'></img></div>
                 <div className='dadosFilmesID'>

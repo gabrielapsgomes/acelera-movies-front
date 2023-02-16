@@ -1,5 +1,6 @@
 import './modal.css'
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Modal = ({ children, title, className, icon }) => {
   const [toggle, setToggle] = useState(false)
@@ -8,7 +9,7 @@ const Modal = ({ children, title, className, icon }) => {
   }
   return (
     <>
-     <a icon={icon} onClick={handleClick} className={className}>{title}</a>
+     <a onClick={handleClick} className={className}>{title} { icon ? <FontAwesomeIcon icon={icon}/> : null}</a>
     {toggle && (
      <div className="modal-container">
       <div className="modal">

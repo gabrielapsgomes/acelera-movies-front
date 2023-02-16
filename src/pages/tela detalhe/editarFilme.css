@@ -125,13 +125,15 @@ display: block;
 }
 
 .botaoEditar {
-  background-color: aqua;
-  border: 10px;
-  width: 20px;
-  color: rgb(157, 154, 154);
- padding-bottom: 20px;
- padding-right: 10%;
-font-size: 20px;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgb(139, 134, 134);
+  width: 40px;
+  height: 40px;
+  color: white;
 }
 
 .labelID{

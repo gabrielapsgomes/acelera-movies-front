@@ -3,9 +3,7 @@ import axios from 'axios'
 import { useState } from 'react'
 import './editarFilme.css'
 import { useParams } from 'react-router'
-
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// icon={<FontAwesomeIcon icon="fa-duotone fa-pen" />}
+import { faPen } from '@fortawesome/free-solid-svg-icons'
 
 export const ModalEdicao = () => {
   const { id } = useParams()
@@ -40,7 +38,7 @@ export const ModalEdicao = () => {
       .then(() => location.reload())
   }
 
-  return (<body className='bodyID'><Modal title='ed' className='botaoEditar'>
+  return (<body className='bodyID'><Modal className='botaoEditar' icon={faPen}>
   <form id='formModalID' onSubmit={handleSubmit}>
 
 <div className='inputID'><label className='labelID' htmlFor='Title'>Title</label>
