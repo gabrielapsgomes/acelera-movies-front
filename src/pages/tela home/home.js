@@ -65,6 +65,12 @@ const TelaHome = () => {
     <div className='input'> <label className='labelHome' htmlFor='Studio'>Studio</label>
         <input className='InputStudio' type="text" placeholder='Studio' id='studio' name='studio' onChange={handleChange}/></div>
 
+    <div className='input'> <label className='labelHome' htmlFor='Gender'>Gender</label>
+        <input className='InputGender' type="text" placeholder='Gender' id='gender' name='gender' onChange={handleChange}/></div>
+
+    <div className='input'> <label className='labelHome' htmlFor='Actors'>Actors</label>
+        <input className='InputActors' type="text" placeholder='Actors' id='actors' name='actors' onChange={handleChange}/></div>
+
     <label className='labelHome' htmlFor='Stars'>Stars</label>
         <input className='InputStars' type="integer" placeholder='Note' id='note' name='note' onChange={handleChange}/>
 

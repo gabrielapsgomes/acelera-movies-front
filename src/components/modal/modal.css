@@ -19,15 +19,12 @@
   padding: 10px;
   margin: 0 auto;
   width: 400px;
-  height: 600px;
+  height: 650px;
 }
 
 
 
-/* .modal h2, .modal p {
- margin: 0;
- color: blue;
-} 
+/*
 
 .modal header {
   display: flex;
@@ -39,17 +36,4 @@
   background-color: rgb(0, 9, 15);
   color: white;
 } 
-
-.close {
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  color: white;
-  font-weight: 900;
-  font-size: 20px;
-  cursor: pointer;
-} 
-
-.close:hover {
-  color: darkblue;
-} */
+*/

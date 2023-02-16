@@ -68,6 +68,12 @@ export const ModalEdicao = () => {
 <div className='inputID'> <label className='labelID' htmlFor='Studio'>Studio</label>
   <input className='InputStudioID' type="text" placeholder='Studio' id='studio' name='studio' onChange={handleChange}/></div>
 
+<div className='inputID'> <label className='labelID' htmlFor='Gender'>Gender</label>
+        <input className='InputGenderID' type="text" placeholder='Gender' id='gender' name='gender' onChange={handleChange}/></div>
+
+<div className='inputID'> <label className='labelID' htmlFor='Actors'>Actors</label>
+        <input className='InputActorsID' type="text" placeholder='Actors' id='actors' name='actors' onChange={handleChange}/></div>
+
 <label className='labelID' htmlFor='NoteID'>Stars</label>
   <input className='InputStarsID' type="integer" placeholder='Stars' id='note' name='note' onChange={handleChange}/>
 

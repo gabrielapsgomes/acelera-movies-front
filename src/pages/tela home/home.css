@@ -114,6 +114,22 @@
   display: block;
 }
 
+.InputGender{
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+}
+
+.InputActors{
+  border: 2px solid rgb(24, 120, 29);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  padding: 10px;
+  width: 150px;
+}
+
 .botaoCriar {
 border: none;
 background-color: rgb(24, 120, 29);

@@ -4,6 +4,8 @@ import { ModalEdicao } from '../tela detalhe/editarFilme'
 import { useParams } from 'react-router'
 import './filme.css'
 import Note from '../../components/estrelas'
+import BotaoDel from '../../components/buttonDelete'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const DetalheFilme = () => {
   const [movie, setMovies] = useState([])
@@ -30,7 +32,7 @@ const DetalheFilme = () => {
       </div>
         <div className="filmesID">
         <div className="mainID">
-                <h1 className="h1TitlesID">{movie.title} <ModalEdicao /></h1> </div>
+                <h1 className="h1TitlesID">{movie.title} <ModalEdicao /> <BotaoDel icon={faTrash}/></h1> </div>
                <li className='liID'>
                 <div className='cssImage'><img src={movie.image} className='imagemID'></img></div>
                 <div className='dadosFilmesID'>
