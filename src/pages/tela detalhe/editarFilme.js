@@ -3,9 +3,8 @@ import axios from 'axios'
 import { useState } from 'react'
 import './editarFilme.css'
 import { useParams } from 'react-router'
-import { faPen } from '@fortawesome/free-solid-svg-icons'
 
-export const ModalEdicao = () => {
+export const ModalEdicao = ({ icon }) => {
   const { id } = useParams()
   const [movie, setMovie] = useState({
     title: '',
@@ -38,7 +37,7 @@ export const ModalEdicao = () => {
       .then(() => location.reload())
   }
 
-  return (<body className='bodyID'><Modal className='botaoEditar' icon={faPen}>
+  return (<Modal className='botaoEditar' icon={icon}><body className='bodyID'>
   <form id='formModalID' onSubmit={handleSubmit}>
 
 <div className='inputID'><label className='labelID' htmlFor='Title'>Title</label>
@@ -80,6 +79,7 @@ export const ModalEdicao = () => {
   <button onClick={handleSubmit} type ='submit' className='update'>Send Update</button>
 
  </form>
+ </body>
 </Modal>
-</body>)
+  )
 }

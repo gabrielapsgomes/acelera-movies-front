@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from 'axios'
 import { useParams, useNavigate } from 'react-router'
+import './buttonDelete.css'
 
 const BotaoDel = ({ className, icon }) => {
   const navigate = useNavigate()
@@ -14,7 +15,7 @@ const BotaoDel = ({ className, icon }) => {
     }
   }
   return (
-    <button onClick={handleClick} className={className}> { icon ? <FontAwesomeIcon icon={icon}/> : null}</button>
+    <a onClick={handleClick} className='botaoDelete'> { icon ? <FontAwesomeIcon icon={icon}/> : null}</a>
   )
 }
 export default BotaoDel
