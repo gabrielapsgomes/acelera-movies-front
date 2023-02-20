@@ -52,6 +52,7 @@ const DetalheFilme = () => {
                 <h1 className="h1diretorID">Director: {movie.director}</h1>
                 <h1 className="h1writerID">Writer: {movie.writer}</h1>
                 <h1 className="h1studioID">Studio: {movie.studio}</h1>
+                <h1 className='h1ActorsID'>Actors: {movie.actors}</h1>
                 </div>
               </li>
           </div>

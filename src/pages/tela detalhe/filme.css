@@ -111,12 +111,20 @@ background-color:  rgb(121, 218, 237);
 .h1classificacaoID{
   font-size: 1.4rem;
   padding-top: 3%;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
+  font-family:serif;
+  color: rgb(66, 64, 64);
+}
+
+.h1ActorsID{
+  font-size: 1.4rem;
+  padding-top: 12px;
   font-family:serif;
   color: rgb(66, 64, 64);
 }
 
 .h1diretorID{
+  padding-top: 8px;
   font-size: 1.4rem;
   padding-bottom: 7px;
   font-family:serif;
@@ -124,6 +132,7 @@ background-color:  rgb(121, 218, 237);
     }
 
 .h1writerID{
+  padding-top: 8px;
   font-size: 1.4rem;
   padding-bottom: 7px;
   font-family:serif;
@@ -131,8 +140,8 @@ background-color:  rgb(121, 218, 237);
       }
       
 .h1studioID{
+  padding-top: 8px;
   font-size: 1.4rem;
-  padding-bottom: 7px;
   font-family:serif;
   color: rgb(66, 64, 64);
         }
