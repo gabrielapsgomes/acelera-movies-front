@@ -24,7 +24,12 @@ const FormularioLogin = () => {
     if (!email || !password) {
       return alert('Preencha os campos corretamente')
     }
-    await client.post('/login', { email: email, password: password })
+    await client.post('/login', {}, {
+      auth: {
+        username: email,
+        password: password
+      }
+    })
       .then(response => response.data.auth && navigate('/home'))
       .catch(error => alert(error))
   }
